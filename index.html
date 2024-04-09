@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./jquery.js"></script>
+    <script src="./File.js"></script>
+    <link rel="stylesheet" href="styel.css" />
+
+    <script src="./jquery.js"></script>
+  </head>
+  <body>
+    <div id="main" class="w-full h-screen bg-[#191924] relative">  
+        <h1 class="absolute text-3xl top-[16%] sm:top-[12%] left-[20%]  md:left-[27%] lg:left-[32%] xl:left-[34%] text-white font-semibold tracking-[1rem] ">Todo</h1>
+
+      <img class="w-full h-64 object-cover" src="./images/bg-desktop-dark.jpg" alt="" />
+      
+      <div id="func" class="absolute top-40 left-1/2 -translate-x-1/2 w-96">
+        <div id="input" class="w-fit flex -top-5 absolute left-1/2 -translate-x-1/2">
+          <input
+            class="bg-[#24273D]  rounded-md w-[50vw] h-10 sm:w-96 sm:h-12 outline-none px-4 text-white text-[3vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.2vw] focus:ring-blue-400 focus:ring-2"
+            placeholder="Create a new todo..."
+            type="text"
+            name=""
+            id="in"
+          />
+          <button
+            class=" add active:ring-2  ml-3 tracking-wide  bg-[#000000] px-2 py-1 rounded-md text-white transition-all border-black hover: border-2 hover:text-black hover:bg-white "
+          >
+            Add
+          </button>
+        </div>
+        
+        <div id="list" class="bg-[#25263D] mt-12 md:-ml-8 rounded-md w-full h-10 sm:w-80 sm:h-23  md:w-full md:h-auto"> 
+         <div id="logo" class="w-full h-auto pb-3 flex justify-between items-end"> <h1 id="task1" class="text-white text-3xl pl-5 pt-2 ">Tasks :</h1><button  class=" active:ring-2   tracking-wide mr-8 mt-3  bg-[#000000] px-2 py-1 rounded-md text-white transition-all border-black hover: border-2 hover:text-black hover:bg-white "
+          id="bx">Completed</button></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
