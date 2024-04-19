@@ -12,7 +12,7 @@ $(document).ready(() => {
           '" class=" flex gap-1 pr-3 w-[20%]"> <button class="edit bg-[#000000]   active:ring-2 px-2 py-1 rounded-md text-white transition-all border-black hover: border-2 hover:text-black hover:bg-white ">Edit</button><button class="del bg-[#000000]   active:ring-2 px-2 py-1 rounded-md text-white transition-all border-black hover: border-2 hover:text-black hover:bg-white ">Delete</button></div> </div>'
       );
       $("#list").append(newItem);
-      $("#in").val("");
+      $("#in").val(" ");
     } else {
       alert("Enter Something");
     }
